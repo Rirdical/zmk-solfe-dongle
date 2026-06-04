@@ -143,6 +143,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            label = "SEX_2";
         };
 
         SEX_3 {
@@ -155,6 +156,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "SEX_3";
         };
 
         SEX_4 {
@@ -165,6 +167,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "SEX_4";
         };
 
         SEX_5 {
@@ -175,6 +179,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "SEX_5";
         };
     };
 
