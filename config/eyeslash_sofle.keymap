@@ -46,6 +46,15 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        a {
+            bindings = <&kp B>;
+            key-positions = <56 60>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,11 +86,11 @@
 
         SEX_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8   &kp F9   &kp F10    &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none           &mmv MOVE_DOWN   &none   &none   &kp F11  &kp F12  &kp UNDER  &kp PLUS
+&trans  &out OUT_USB  &out OUT_BLE    &none         &none         &none           &mmv MOVE_LEFT   &none   &none   &none    &none    &kp LBRC   &kp RBRC
+&trans  &sys_reset    &none           &bootloader   &none         &none           &mmv MOVE_RIGHT  &none   &none   &none    &none    &none      &trans
+&none   &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans   &trans   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -89,12 +98,14 @@
 
         SEX_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none  &none  &none
+&none  &none         &bt BT_PRV    &out OUT_TOG  &bt BT_NXT    &none         &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none  &none
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         SEX_4 {
