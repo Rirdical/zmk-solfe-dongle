@@ -122,11 +122,11 @@
 
         SEX_1 {
             bindings = <
-&trans      &kp F1                 &kp F2               &kp F3             &kp F4           &kp F5                   &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10           &trans
-&trans      &kp C_AL_FILE_BROWSER  &kp LA(K_SCROLL_UP)  &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &kp LA(K_SCROLL_DOWN)    &mmv MOVE_DOWN   &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp MINUS         &kp EQUAL
-&kp GRAVE   &kp C_AL_WWW           &mkp MB1             &mkp MB3           &mkp MB2         &mkp MB5                 &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp C_AL_TEXT_EDITOR   &kp C_PREV           &kp C_PLAY_PAUSE   &kp C_NEXT       &kp K_CALCULATOR         &mmv MOVE_RIGHT  &kp F11         &kp F12        &kp INS       &none      &none             &trans
-&kp C_MUTE  &trans                 &trans               &trans             &trans           &trans                   &mkp LCLK        &trans          &trans         &trans        &trans     &trans
+&trans      &kp F1  &kp F2      &kp F3            &kp F4      &kp F5      &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10           &trans
+&trans      &none   &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &mkp MB4    &mmv MOVE_DOWN   &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp MINUS         &kp EQUAL
+&kp GRAVE   &none   &mkp MB1    &mkp MB3          &mkp MB2    &mkp MB5    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &none   &none       &none             &none       &none       &mmv MOVE_RIGHT  &kp F11         &kp F12        &kp INS       &none      &none             &trans
+&kp C_MUTE  &trans  &trans      &trans            &trans      &trans      &mkp LCLK        &trans          &trans         &trans        &trans     &trans
             >;
 
             display-name = "SEX_1";
@@ -142,7 +142,7 @@
 &none   &trans      &trans  &trans       &trans  &trans    &mkp LCLK        &trans  &trans  &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
             label = "SEX_2";
         };
 
@@ -161,11 +161,11 @@
 
         SEX_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "SEX_4";
